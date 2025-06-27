@@ -63,7 +63,7 @@ header {
 
 .carousel img {
   min-width: 100%;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
   scroll-snap-align: center;
 }
@@ -208,14 +208,37 @@ blockquote footer {
 .shop-logos img {
   height: 60px; /* Fixed height */
   object-fit: contain; /* Maintain aspect ratio */
-  filter: grayscale(1);
-  transition: filter 0.3s;
+  transition: transform 0.3s ease;
 }
-
 
 .shop-logos img:hover {
-  filter: grayscale(0);
+  transform: scale(1.1);
 }
+
+/* Back to top Button */
+#backToTopBtn 
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: #ff77a9;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 2000;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  #backToTopBtn:hover 
+  {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #FF77FF;
+    cursor: pointer;
+  }
 
 /* Footer */
 footer {
@@ -245,6 +268,6 @@ footer {
 }
 
 footer p {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #666;
 }
