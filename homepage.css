@@ -142,3 +142,13 @@
 .shop-logos img:hover {
   transform: scale(1.1);
 }
+
+/*Mobile Query <=600px*/
+@media screen and (max-width: 600px) 
+{
+  .hero-text img {
+  max-width: 400px;
+  height: auto;
+  display: block;
+}
+}
