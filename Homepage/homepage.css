@@ -1,12 +1,12 @@
 /* Hero Slideshow */
 .hero{
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .slideshow-container {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 600px;
   overflow: hidden;
 }
 
@@ -78,9 +78,9 @@
 }
 
 .card img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+  width: 60%;
+  height: 60%;
+  object-fit: fill;
   border-radius: 10px;
 }
 
