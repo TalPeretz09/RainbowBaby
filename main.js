@@ -21,3 +21,14 @@ function scrollToTop() //Call function
 
 window.addEventListener('scroll', toggleBTT);
 BttBtn.addEventListener('click', scrollToTop);
+
+//Hamburger Nav Logic
+//-------------------
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.getElementById('hamburger-btn');
+  const sidebar = document.getElementById('mobile-sidebar');
+
+  hamburger.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+  });
+});
