@@ -160,7 +160,7 @@
 @media screen and (max-width: 600px) 
 {
   .hero-text img {
-  max-width: 400px;
+  max-width: 350px;
   height: auto;
   display: block;
 }
