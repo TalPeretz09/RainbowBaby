@@ -1,6 +1,6 @@
 /* === Teething Tips Page === */
 main {
-  padding: 100px 20px 60px; /* 100px top for fixed navbar */
+  padding: 40px 20px 60px; /* 100px top for fixed navbar */
   max-width: 1000px;
   margin: 0 auto;
 }
