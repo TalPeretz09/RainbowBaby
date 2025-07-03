@@ -115,7 +115,7 @@ blockquote footer {
 .rating-input input:checked ~ label,
 .rating-input label:hover,
 .rating-input label:hover ~ label {
-  color: #ffc107;
+  color: rgb(225, 225, 0);
 }
 
 .submit-review button {
