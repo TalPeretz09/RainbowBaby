@@ -72,6 +72,15 @@ blockquote footer {
   color: #888;
 }
 
+.person{
+  background-color: #989898;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: white;
+  border-radius: 100px;
+  font-size: 1rem;
+}
+
 /* Back to top Button */
 #backToTopBtn 
 {
