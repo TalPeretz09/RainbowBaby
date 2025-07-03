@@ -99,10 +99,10 @@ blockquote footer {
 
 /* Footer */
 footer {
-  background-color: #f3f3f3;
+  background-color: #ff77a9;
   padding: 20px;
   font-size: 0.85rem;
-  color: #666;
+  color: white;
 }
 
 .footer-info {
@@ -110,24 +110,23 @@ footer {
   justify-content: space-between;
   align-items: center;
   max-width: 1300px;
-  margin: 0 auto 10px;
-  padding: 0 20px;
+  padding: 0 30px;
   flex-wrap: wrap;
 }
 
 .contact-details {
   display: flex;
-  gap: 45px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
 .contact-details p {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.52rem;
 }
 
 .contact-details a {
-  color: #666;
+  color: white;
   text-decoration: none;
 }
 
