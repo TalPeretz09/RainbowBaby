@@ -1,0 +1,135 @@
+/* === Testimonials Section === */
+.testimonials {
+  padding: 80px 20px 40px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  color: #ff77a9;
+  margin-bottom: 40px;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+blockquote {
+  background: #fdf7f9;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+  font-style: italic;
+  text-align: left;
+}
+
+.stars {
+  color: #ffc107;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+blockquote p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+blockquote footer {
+  font-style: normal;
+  font-weight: 500;
+  color: #666;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+/* === Submit Review Form === */
+.submit-review {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  max-width: 700px;
+  margin: 60px auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.submit-review h2 {
+  text-align: center;
+  color: #ff77a9;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.submit-review form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.submit-review label {
+  font-weight: 600;
+  color: #444;
+}
+
+.submit-review input[type="text"],
+.submit-review textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+.submit-review input:focus,
+.submit-review textarea:focus {
+  border-color: #ff77a9;
+  outline: none;
+}
+
+.rating-input {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  gap: 5px;
+}
+
+.rating-input input[type="radio"] {
+  display: none;
+}
+
+.rating-input label {
+  font-size: 1.8rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.rating-input input:checked ~ label,
+.rating-input label:hover,
+.rating-input label:hover ~ label {
+  color: #ffc107;
+}
+
+.submit-review button {
+  padding: 12px;
+  background-color: #ff77a9;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-review button:hover {
+  background-color: #ff5c97;
+}

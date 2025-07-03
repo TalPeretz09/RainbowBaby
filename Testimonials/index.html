@@ -46,7 +46,68 @@
   </header>
   
   <main>
-    
+    <section class="testimonials">
+      <h2>Testimonials</h2>
+
+      <div class="testimonial-cards">
+        <blockquote>
+          <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+          <p>“Ayanda was crying nonstop from teething. Rainbow Powder calmed her within minutes — it's now always in our nappy bag!”</p>
+          <footer>- Zanele Mthembu</footer>
+        </blockquote>
+
+        <blockquote>
+          <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+          <p>“Nothing worked like Rainbow Gel. Eli opens his mouth when he sees it — he knows it helps. I love that it's organic. Total game-changer!”</p>
+          <footer>- Lauren Jacobs</footer>
+        </blockquote>
+
+        <blockquote>
+          <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+          <p>“With twins teething at once, Rainbow Powder saved us on tough nights. It's safe, local, and even our paediatrician approves. Highly recommended!”</p>
+          <footer>- Thabo Molefe</footer>
+        </blockquote>
+
+        <blockquote>
+          <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+          <p>“As a dad, I wanted something safe and easy. Rainbow Gel soothes Mvelo fast, and it doesn't have that strong medicinal smell. Grateful for a thoughtful product!”</p>
+          <footer>- Sipho Ndlovu</footer>
+        </blockquote>
+
+        <blockquote>
+          <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+          <p>“We tried so many remedies, but only Rainbow Gel soothed Luthando's gums. It works fast and gives us all peace.”</p>
+          <footer>- Mbali Khuzwayo</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="submit-review">
+    <h2>Submit Your Testimonial</h2>
+    <form action="https://formspree.io/f/xwpbznzw" method="POST">
+
+      <label for="firstName">First Name:</label>
+      <input type="text" name="firstName" id="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" name="lastName" id="lastName" required>
+
+      <label for="rating">Star Rating:</label>
+      <div class="rating-input">
+        <input type="radio" name="rating" value="5" id="star5" required><label for="star5">⭐</label>
+        <input type="radio" name="rating" value="4" id="star4"><label for="star4">⭐</label>
+        <input type="radio" name="rating" value="3" id="star3"><label for="star3">⭐</label>
+        <input type="radio" name="rating" value="2" id="star2"><label for="star2">⭐</label>
+        <input type="radio" name="rating" value="1" id="star1"><label for="star1">⭐</label>
+      </div>
+
+      <label for="message">Your Testimonial:</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
+
+      <button type="submit">Submit Review</button>
+    </form>
+  </section>
+
   <button id="backToTopBtn" aria-label="Back to top">↑</button>
   </main>
 
