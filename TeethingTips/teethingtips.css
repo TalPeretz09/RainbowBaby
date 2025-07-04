@@ -51,7 +51,7 @@ main {
 }
 
 /* Responsive adjustments */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .tips-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
