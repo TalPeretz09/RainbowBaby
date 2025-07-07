@@ -157,7 +157,7 @@
 }
 
 /*Mobile Query <=600px*/
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 991px) 
 {
   .hero-text img {
   max-width: 350px;

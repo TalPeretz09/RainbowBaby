@@ -170,7 +170,7 @@ footer p {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 991px) 
 {
   /* Hide regular desktop nav */
   .navbar {
