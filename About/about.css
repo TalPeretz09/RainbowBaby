@@ -45,10 +45,6 @@ h2{
   line-height: 1.8;
 }
 
-ul{
+.list{
   padding-bottom: 20px;
-}
-
-li{
-  padding-bottom: 10px;
 }
