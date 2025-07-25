@@ -107,104 +107,78 @@ blockquote footer {
   }
 
 /* Footer */
-/* Footer Styles */
+/* General Footer Styling */
 footer {
-  background: linear-gradient(to right, #ff77a9, #ff99bb);
+  background-color: #ff77a9;
   color: white;
-  font-family: 'Segoe UI', sans-serif;
-  padding: 40px 20px 20px;
-}
-
-.footer-container {
-  max-width: 1300px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 30px;
+  padding: 1.5rem 1rem;
+  font-family: Arial, sans-serif;
 }
 
 .footer-section {
-  flex: 1;
-  min-width: 250px;
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-/* Address block */
-.footer-address {
-  align-items: flex-start;
-}
-
-.footer-address img {
-  width: 20px;
-  height: 20px;
-  margin-bottom: 8px;
-  filter: brightness(0) invert(1);
-}
-
-.footer-address address {
-  font-style: normal;
-  line-height: 1.6;
-  font-size: 1rem;
-}
-
-/* Contact block */
-.footer-contact {
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem; /* controls spacing between groups */
+  text-align: left;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.5rem;
+  white-space: nowrap;
 }
 
 .contact-item img {
   width: 20px;
   height: 20px;
-  filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1); /* white icon */
 }
 
-.contact-item a {
+.contact-item a,
+.contact-item address {
   color: white;
   text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s;
+  font-style: normal;
+  font-size: 1.5rem;
 }
 
-.contact-item a:hover {
-  color: #ffe1ec;
-}
-
-/* Social icons */
 .footer-social {
-  flex-direction: row;
-  justify-content: flex-end;
+  display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1rem;
 }
 
 .footer-social img {
-  width: 50px;
-  height: 50px;
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
 }
 
-.footer-social img:hover {
-  opacity: 1;
+.footer-social a:hover img {
+  transform: scale(1.1);
 }
 
-/* Footer bottom */
 .footer-bottom {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 1rem;
   font-size: 0.9rem;
-  color: #fbeaf1;
 }
+
+
+
+
 
 
 @media screen and (max-width: 991px) 
