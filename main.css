@@ -107,73 +107,92 @@ blockquote footer {
   }
 
 /* Footer */
-/* General Footer Styling */
+/* Footer overall layout */
 footer {
-  background-color: #ff77a9;
-  color: white;
-  padding: 1.5rem 1rem;
+  background-color: #ff77a9; /* Set background to pink */
+  padding: 20px;
   font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: white; /* Make all text white by default */
 }
 
-.footer-section {
+/* Force all children text to inherit white color */
+footer a,
+footer address,
+footer p {
+  color: white;
+  text-decoration: none;
+}
+
+/* Ensures icons are white (assuming they are images or SVGs) */
+.footer-main img,
+.footer-social img,
+.contact-item img {
+  filter: brightness(0) invert(1); /* Inverts dark icons to white */
+}
+
+/* Main layout for contact and socials */
+.footer-main {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 2.5rem; /* controls spacing between groups */
-  text-align: left;
+  gap: 40px;
 }
 
+/* Contact Section Layout */
 .footer-contact {
   display: flex;
-  align-items: center;
-  gap: 2rem;
+  gap: 90px;
+  flex-wrap: wrap;
 }
 
 .contact-item {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  white-space: nowrap;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 300px;
+  font-size: 1rem;
 }
 
 .contact-item img {
   width: 20px;
   height: 20px;
-  filter: brightness(0) invert(1); /* white icon */
+  margin-top: 2px;
 }
 
-.contact-item a,
 .contact-item address {
-  color: white;
-  text-decoration: none;
+  margin: 0;
   font-style: normal;
-  font-size: 1.5rem;
+  line-height: 1.4;
 }
 
+/* Social icons layout */
 .footer-social {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 15px;
 }
 
 .footer-social img {
   width: 40px;
   height: 40px;
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s;
 }
 
-.footer-social a:hover img {
-  transform: scale(1.1);
+.footer-contact {
+  flex: 1 1 70%;
+}
+.footer-social {
+  flex: 1 1 30%;
+  justify-content: flex-end; /* Optional: align to the right */
+  margin-top: -50px;
 }
 
+/* Footer bottom line */
 .footer-bottom {
+  margin-top: 30px;
   text-align: center;
-  margin-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  padding-top: 1rem;
-  font-size: 0.9rem;
+  font-size: 13px;
+  color: white;
 }
 
 
@@ -243,25 +262,68 @@ footer {
     color: #ff77a9;
   }
 
-  .footer-container {
+  footer {
+    background-color: #ff77a9;
+    color: white;
+    padding: 20px;
+  }
+
+  footer a,
+  footer address,
+  footer p {
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer-main {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    gap: 20px;
   }
 
-  .footer-section {
-    align-items: center !important;
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
-  .footer-address {
-    align-items: center;
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 100%;
+  }
+
+  .contact-item img {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    filter: brightness(0) invert(1); /* keep icons white */
+  }
+
+  .contact-item address {
+    font-style: normal;
+    line-height: 1.4;
+    margin: 0;
   }
 
   .footer-social {
-    justify-content: center;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 10px;
   }
 
-  .footer-address address {
-    line-height: 1.5;
+  .footer-social img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1); /* keep icons white */
+  }
+
+  .footer-bottom {
+    text-align: left;
+    font-size: 13px;
+    color: white;
+    margin-top: 20px;
   }
 }
